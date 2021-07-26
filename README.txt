@@ -32,3 +32,6 @@ Credits:
 		jQuery (jquery.com)
 		Scrollex (github.com/ajlkn/jquery.scrollex)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
+
+
+Banner Image: `https://pixabay.com/photos/johns-hopkins-university-gilman-hall-1590925/`
