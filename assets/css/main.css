@@ -2667,12 +2667,12 @@ input, select, textarea {
 			display: inline-block;
 			padding-right: 2.5em;
 			vertical-align: middle;
-			width: 48%;
+			width: 30%;
 		}
 
 			.features article .image img {
 				display: block;
-				width: 50%;
+				width: 80%;
 			}
 
 		.features article .inner {
