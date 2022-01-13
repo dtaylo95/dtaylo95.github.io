@@ -30,7 +30,7 @@
 						<li><a href="#awards">Honors and Awards</a></li>
 						<li><a href="#teaching">Teaching</a></li>
 						<li><a href="#service">Academic Service</a></li>
-						<li><a href="#download-cv">Curriculum Vitae</a></li>
+						<li><a href="#cv">Curriculum Vitae</a></li>
 <!-- 						<li><a href="#five">Contact</a></li> -->
 					</ul>
 				</nav>
@@ -40,7 +40,7 @@
 <!-- 						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
 <!-- 						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
 						<li><a href="https://github.com/dtaylo95" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="mailto:dtaylo95[at]jhu[dot]edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a id="mlink" href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 				</footer>
 			</section>
@@ -154,7 +154,7 @@
 							</section>
 
 						<!-- Download CV -->
-							<section id="download-cv">
+							<section id="cv">
 								<div class="container">
 									<header class="major">
 										<h3>Curriculum Vitae</h3>
@@ -166,7 +166,7 @@
 										</iframe>
 									</object>
 
-									<p></br>You can download my current CV <b><a href="https://drive.google.com/uc?export=download&id=1jmTFh56EFBRzR-3hDpyzGYM9mipURRqN">here</a></b>. If you'd like to contact me, feel free to reach out via twitter or email using the links provided.</p>
+									<p></br>You can download my current CV <b><a href="https://drive.google.com/uc?export=download&id=1jmTFh56EFBRzR-3hDpyzGYM9mipURRqN">here</a></b>. If you'd like to contact me, feel free to reach out via twitter or email using the links provided at the bottom of the navigation pane.</p>
 									</form>
 								</div>
 							</section>
@@ -539,6 +539,17 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+			/* 1. define variables */
+			var me = "dtaylo95";
+			var place = "jhu.edu";
+
+			/* 2. find email link to replace */
+			var elink = document.getElementById("mlink");
+
+			/* 3. replace link href with variables  */
+			elink.href = `mailto:${me}@${place}`;
+			</script>
 
 	</body>
 </html>
