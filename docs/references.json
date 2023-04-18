@@ -6,5 +6,29 @@
 		"title": "The complete sequence of a human Y chromosome",
 		"journal": "bioRxiv",
 		"doi": "10.1101/2022.12.01.518724"
+	},
+	{
+		"id": "variants_paper",
+		"authors": "*Aganezov, S., *Yan, S. M., *Soto, D. C., *Kirsche, M., *Zarate, S., Avdeyev, P., <b>Taylor, D. J.</b>, ..., & Schatz, M. C.",
+		"year": "2021",
+		"title": "A complete reference genome improves analysis of human genetic variation",
+		"journal": "Science",
+		"doi": "10.1126/science.abl3533"
+	},
+	{
+		"id": "chm13structdiff_paper",
+		"authors": "Yang, X., Wang, X., Zou, Y., Zhang, S., Xia, M., Vollger, M. R., Chen, N.-C., <b>Taylor, D. J.</b>, Harvey, W. T., Logsdon, G. A., Meng, D., Shi, J., McCoy, R. C., Schatz, M. C., Li, W., Eichler, E. E., Lu, Q., & Mao, Y.",
+		"year": "2022",
+		"title": "A refined characterization of large-scale genomic differences in the first complete human genome",
+		"journal": "bioRxiv",
+		"doi": "10.1101/2022.12.17.520860"
+	},
+	{
+		"id": "cCRE_paper",
+		"authors": "Xiang, G., He, X., Giardine, B. M., Weaver, K. J., <b>Taylor, D. J.</b>, McCoy, R. C., Jansen, C., Keller, C. A., Wixom, A. Q., Cockburn, A., Miller, A., Qi, Q., He, Y., Li, Y., Lichtenberg, J., Heuston, E. F., Anderson, S. M., Luan, J., Vermunt, M. W., ..., Hardison, R. C.",
+		"year": "2023",
+		"title": "Cross-species regulatory landscapes and elements revealed by novel joint systematic integration of human and mouse blood cell epigenomes",
+		"journal": "bioRxiv",
+		"doi": "10.1101/2023.04.02.535219"
 	}
 ]
