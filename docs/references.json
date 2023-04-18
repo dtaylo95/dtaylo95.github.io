@@ -17,11 +17,11 @@
 	},
 	{
 		"id": "chm13structdiff_paper",
-		"authors": "Yang, X., Wang, X., Zou, Y., Zhang, S., Xia, M., Vollger, M. R., Chen, N.-C., <b>Taylor, D. J.</b>, Harvey, W. T., Logsdon, G. A., Meng, D., Shi, J., McCoy, R. C., Schatz, M. C., Li, W., Eichler, E. E., Lu, Q., & Mao, Y.",
-		"year": "2022",
-		"title": "A refined characterization of large-scale genomic differences in the first complete human genome",
-		"journal": "bioRxiv",
-		"doi": "10.1101/2022.12.17.520860"
+		"authors": "*Aganezov, S., *Yan, S. M., *Soto, D. C., *Kirsche, M., *Zarate, S., Avdeyev, P., <b>Taylor, D. J.</b>, ..., & Schatz, M. C.",
+		"year": "2021",
+		"title": "A complete reference genome improves analysis of human genetic variation",
+		"journal": "Science",
+		"doi": "10.1126/science.abl3533"
 	},
 	{
 		"id": "cCRE_paper",
