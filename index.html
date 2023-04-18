@@ -74,7 +74,7 @@
 
 									<h4>Characterizing a complete human reference genome</h4>
 									<a href="https://doi.org/10.1126/science.abl3533" target="_blank" class="image" style="width:70%"><img src="images/T2T-variants-graphical-abstract_v2.png" alt="" style="width:100%"/></a>
-									<p style="font-size:12px">Comparison of chr1 assembly between GRCh38 and T2T-CHM13. Adapted from <span id="chrY_shortRef" /></p>
+									<p style="font-size:12px">Comparison of chr1 assembly between GRCh38 and T2T-CHM13. Adapted from <span id="chrY_paper_longRef" /></p>
 									<p>The first human genome sequence—completed in 2003 as part of the Human Genome Project—covered 92% of the full genome. That last 8% (almost 200 million bases)—largely comprised of difficult-to-resolve repetitive sequences—eluded scientists for nearly two decades. However, in 2021 the <a href="https://sites.google.com/ucsc.edu/t2tworkinggroup" target="_blank">Telomere-to-Telomere (T2T) Consortium</a> finally assembled a 100% complete human genome (T2T-CHM13), using long-read technologies to fill in the missing gaps and correct errors in the previous assembly.<br />
 									<br />
 									As a member of this consortium, I helped characterize <a href="https://doi.org/10.1126/science.abl3533" target="_blank">the utility of using this assembly as a reference for analysis of human genetic variation</a>. In addition to characterizing variation in previously-unresolved regions of the genome, I also facilitated the transition from the current widely used human reference genome (GRCh38) to the new T2T-CHM13 assembly by lifting over catalogs of human genetic variation (over 700 million distinct genetic variants)—to the new reference.<br />
@@ -664,21 +664,35 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				}
 
 				// chrY paper
-				var chrY_authors = "*Rhie, A., *Nurk, S., *Cechova, M., *Hoyt, S. J., *<b>Taylor, D. J.</b>, Altemose, N., Hook, P. W., Koren, S., Rautiainen, M., Alexandrov, I. A., Allen, J., Asri, M., Bzikadze, A. v., Chen, N.-C., Chin, C.-S., Diekhans, M., Flicek, P., Formenti, G., Fungtammasan, A., …, Phillippy, A. M.";
-				var chrY_year = "2022";
-				var chrY_title = "The complete sequence of a human Y chromosome";
-				var chrY_journal = "bioRxiv";
-				var chrY_doi = "10.1101/2022.12.01.518724";
+				// var chrY_authors = "*Rhie, A., *Nurk, S., *Cechova, M., *Hoyt, S. J., *<b>Taylor, D. J.</b>, Altemose, N., Hook, P. W., Koren, S., Rautiainen, M., Alexandrov, I. A., Allen, J., Asri, M., Bzikadze, A. v., Chen, N.-C., Chin, C.-S., Diekhans, M., Flicek, P., Formenti, G., Fungtammasan, A., …, Phillippy, A. M.";
+				// var chrY_year = "2022";
+				// var chrY_title = "The complete sequence of a human Y chromosome";
+				// var chrY_journal = "bioRxiv";
+				// var chrY_doi = "10.1101/2022.12.01.518724";
 				
-				var chrY_longRef = getLongRef(chrY_authors, chrY_year, chrY_title, chrY_journal, chrY_doi);
-				var chrY_shortRef = getShortRef(chrY_authors, chrY_year, chrY_journal, chrY_doi);
+				// var chrY_longRef = getLongRef(chrY_authors, chrY_year, chrY_title, chrY_journal, chrY_doi);
+				// var chrY_shortRef = getShortRef(chrY_authors, chrY_year, chrY_journal, chrY_doi);
 
-				replaceAll("chrY_longRef", chrY_longRef);
-				replaceAll("chrY_shortRef", chrY_shortRef);
+				// replaceAll("chrY_longRef", chrY_longRef);
+				// replaceAll("chrY_shortRef", chrY_shortRef);
 
 				$.getJSON('docs/references.json', function(data) {
 					for (let i=0; i < data.length; i++) {
-						document.getElementById(data[i].id).innerHTML = 'asdkfjhsdf';
+						
+						let id = data[i].id;
+						let authors = data[i].authors;
+						let year = data[i].year;
+						let title = data[i].title;
+						let journal = data[i].journal;
+						let doi = data[i].doi;
+
+						let longRef = getLongRef(authors, year, title, journal, doi);
+						let shortRef = getShortRef(authors, year, journal, doi);
+
+						replaceAll(id + '_longRef', longRef);
+						replaceAll(id + '_shortRef', shortRef);
+
+						document.getElementById(data[i].id).innerHTML = 'Test';
 					}
 				})
 				
