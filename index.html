@@ -89,21 +89,23 @@
 											<div class="inner" style="display: inline-block;width:83%;padding-right:2em">
 												<p style="font-size:80%;line-height:1.5"><span id="chrY_paper_longRef" /></p>
 											</div>
-											<span class="__dimensions_badge_embed__" data-doi="10.1101/2022.12.01.518724" data-style="small_circle" style="width:8%;display:inline-block;"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8" ></script>
-											<div data-badge-popover="right" data-badge-type="donut" data-doi="10.1101/2022.12.01.518724" class="altmetric-embed" style="display: inline-block;width:8%;vertical-align:middle;padding:0;margin:0;border:0 none !important;text-decoration:none"></div>
+											<span class="__dimensions_badge_embed__" data-doi="10.1101/2022.12.01.518724" data-style="small_circle" style="width:8%;display:inline-block;"></span>
+											<div data-badge-popover="right" data-badge-type="donut" data-doi="10.1101/2022.12.01.518724" class="altmetric-embed" style="display: inline-block;width:8%;vertical-align:middle;padding:0;margin:0;border:0 none !important;text-decoration:none" />
 										</article>
 										<article style="border-top:0;padding-top:0;margin-bottom:1em">
 											<div class="inner" style="display: inline-block;width:83%;padding-right:2em">
 												<p style="font-size:80%;line-height:1.5"><span id="chm13structdiff_paper_longRef" /></p>
 											</div>
-											<span class="__dimensions_badge_embed__" data-doi="10.1101/2022.12.17.520860" data-style="small_circle" style="width:8%;display:inline-block;"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8" ></script>
+											<span class="__dimensions_badge_embed__" data-doi="10.1101/2022.12.17.520860" data-style="small_circle" style="width:8%;display:inline-block;"></span>
+											<!-- <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8" ></script> -->
 											<div data-badge-popover="right" data-badge-type="donut" data-doi="10.1101/2022.12.17.520860" class="altmetric-embed" style="display: inline-block;width:8%;vertical-align:middle;padding:0;margin:0;border:0 none !important;text-decoration:none"></div>
 										</article>
 										<article style="border-top:0;padding-top:0">
 											<div class="inner" style="display: inline-block;width:83%;padding-right:2em">
 												<p style="font-size:80%;line-height:1.5"><span id="variants_paper_longRef" /></p>
 											</div>
-											<span class="__dimensions_badge_embed__" data-doi="10.1126/science.abl3533" data-style="small_circle" style="width:8%;display:inline-block;"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8" ></script>
+											<span class="__dimensions_badge_embed__" data-doi="10.1126/science.abl3533" data-style="small_circle" style="width:8%;display:inline-block;"></span>
+											<!-- <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8" ></script> -->
 											<div data-badge-popover="right" data-badge-type="donut" data-doi="10.1126/science.abl3533" class="altmetric-embed" style="display: inline-block;width:8%;vertical-align:middle;padding:0;margin:0;border:0 none !important;text-decoration:none"></div>
 										</article>
 									</div>
@@ -125,7 +127,8 @@
 											<div class="inner" style="display: inline-block;width:83%;padding-right:2em">
 												<p style="font-size:80%;line-height:1.5"><span id="cCRE_paper_longRef" /></p>
 											</div>
-											<span class="__dimensions_badge_embed__" data-doi="10.1101/2023.04.02.535219" data-style="small_circle" style="width:8%;display:inline-block;"></span><script async src="https://badge.dimensions.ai/badge.js" charset="utf-8" ></script>
+											<span class="__dimensions_badge_embed__" data-doi="10.1101/2023.04.02.535219" data-style="small_circle" style="width:8%;display:inline-block;"></span>
+											<!-- <script async src="https://badge.dimensions.ai/badge.js" charset="utf-8" ></script> -->
 											<div data-badge-popover="right" data-badge-type="donut" data-doi="10.1101/2023.04.02.535219" class="altmetric-embed" style="display: inline-block;width:8%;vertical-align:middle;padding:0;margin:0;border:0 none !important;text-decoration:none"></div>
 										</article>
 										<p style="font-size: 70%;">For a full list of publications, please see my CV below.</p>
@@ -226,7 +229,7 @@
 									<br />
 									If you'd like to contact me, feel free to reach out via twitter or email using the links provided at the bottom of the navigation pane.</p>
 									</form>
-									<p><span id="chrY_paper" /></p>
+									<p><span id="test" /></p>
 								</div>
 							</section>
 
@@ -599,6 +602,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+			<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
 			<script>
 			/* 1. define variables */
 			var me = "dtaylo95";
@@ -672,14 +676,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						let title = data[i].title;
 						let journal = data[i].journal;
 						let doi = data[i].doi;
-						console.log(id);
 						let longRef = getLongRef(authors, year, title, journal, doi);
 						let shortRef = getShortRef(authors, year, journal, doi);
 
 						replaceAll(id + '_longRef', longRef);
 						replaceAll(id + '_shortRef', shortRef);
 
-						document.getElementById("chrY_paper").innerHTML = 'Test7';
+						document.getElementById("test").innerHTML = 'Test8';
 					}
 				})
 				
