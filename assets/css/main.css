@@ -29,6 +29,14 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+a[target="_self"] {
+  border:0 none;
+  padding: 0;
+  width:64px;
+  height:64px;
+  vertical-align:middle;
+}
+
 body {
 	line-height: 1;
 }
@@ -1709,7 +1717,7 @@ input, select, textarea {
 	.container {
 		margin: 0 auto;
 		max-width: calc(100% - 4.5em);
-		width: 45em;
+		width: 70em;
 	}
 
 		.container.xsmall {
