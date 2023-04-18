@@ -89,24 +89,22 @@
 											<div class="inner" style="display: inline-block;width:83%;padding-right:2em">
 												<p style="font-size:80%;line-height:1.5"><span id="chrY_paper_longRef" /></p>
 											</div>
-											<!-- <span id="chrY_paper_dimensions" class="__dimensions_badge_embed__" data-doi="10.1101/2022.12.01.518724" data-style="small_circle" style="width:8%;display:inline-block;"></span> -->
 											<span id="chrY_paper_dimensions" style="width:8%;display:inline-block;"></span>
-											<!-- <div id="chrY_paper_altmetric" data-badge-popover="right" data-badge-type="donut" data-doi="10.1101/2022.12.01.518724" class="altmetric-embed" style="display: inline-block;width:8%;vertical-align:middle;padding:0;margin:0;border:0 none !important;text-decoration:none" /> -->
-											<div id="chrY_paper_altmetric" style="display: inline-block;width:8%;vertical-align:middle;padding:0;margin:0" />
+											<div id="chrY_paper_altmetric" style="display: inline-block;width:8%;vertical-align:middle;padding:0;margin:0"></div>
 										</article>
 										<article style="border-top:0;padding-top:0;margin-bottom:1em">
 											<div class="inner" style="display: inline-block;width:83%;padding-right:2em">
 												<p style="font-size:80%;line-height:1.5"><span id="chm13structdiff_paper_longRef" /></p>
 											</div>
-											<span class="__dimensions_badge_embed__" data-doi="10.1101/2022.12.17.520860" data-style="small_circle" style="width:8%;display:inline-block;"></span>
-											<div data-badge-popover="right" data-badge-type="donut" data-doi="10.1101/2022.12.17.520860" class="altmetric-embed" style="display: inline-block;width:8%;vertical-align:middle;padding:0;margin:0;border:0 none !important;text-decoration:none"></div>
+											<span id="chm13structdiff_paper_dimensions" style="width:8%;display:inline-block;"></span>
+											<div id="chm13structdiff_paper_altmetric" style="display: inline-block;width:8%;vertical-align:middle;padding:0;margin:0"></div>
 										</article>
 										<article style="border-top:0;padding-top:0">
 											<div class="inner" style="display: inline-block;width:83%;padding-right:2em">
 												<p style="font-size:80%;line-height:1.5"><span id="variants_paper_longRef" /></p>
 											</div>
-											<span class="__dimensions_badge_embed__" data-doi="10.1126/science.abl3533" data-style="small_circle" style="width:8%;display:inline-block;"></span>
-											<div data-badge-popover="right" data-badge-type="donut" data-doi="10.1126/science.abl3533" class="altmetric-embed" style="display: inline-block;width:8%;vertical-align:middle;padding:0;margin:0;border:0 none !important;text-decoration:none"></div>
+											<span id="variants_paper_dimensions" style="width:8%;display:inline-block;"></span>
+											<div id="variants_paper_altmetric" style="display: inline-block;width:8%;vertical-align:middle;padding:0;margin:0"></div>
 										</article>
 									</div>
 
@@ -127,8 +125,8 @@
 											<div class="inner" style="display: inline-block;width:83%;padding-right:2em">
 												<p style="font-size:80%;line-height:1.5"><span id="cCRE_paper_longRef" /></p>
 											</div>
-											<span class="__dimensions_badge_embed__" data-doi="10.1101/2023.04.02.535219" data-style="small_circle" style="width:8%;display:inline-block;"></span>
-											<div data-badge-popover="right" data-badge-type="donut" data-doi="10.1101/2023.04.02.535219" class="altmetric-embed" style="display: inline-block;width:8%;vertical-align:middle;padding:0;margin:0;border:0 none !important;text-decoration:none"></div>
+											<span id="cCRE_paper_dimensions" style="width:8%;display:inline-block;"></span>
+											<div id="cCRE_paper_altmetric" style="display: inline-block;width:8%;vertical-align:middle;padding:0;margin:0"></div>
 										</article>
 										<p style="font-size: 70%;">For a full list of publications, please see my CV below.</p>
 									</div>
@@ -614,35 +612,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			elink.href = `mailto:${me}@${place}`;
 			</script>
 
-<!-- 			<script>
-
-				function getLongRef(authors, year, title, journal, doi) {
-					let outString = `${authors} (${year}). <a href="https://doi.org/${doi}" target="_blank" style="color:#4acaa8">${title}</a>. <i>${journal}</i>.`;
-					return outString;
-				}
-
-				function getShortRef(authors, year, journal, doi) {
-					let firstAuthor_lastName = authors.split(',')[1].replace(*, '');
-					let firstAuthor_initial = authors.split(',')[2];
-					let journal_prefix = journal.split(',')[1];
-					let outString = `<a href="https://doi.org/${doi}" target="_blank">${firstAuthor_lastName}, ${firstAuthor_initial} et al. (${year}) <i>${journal_prefix}</i>.</a>`;
-					return outString;
-				}
-
-
-				var chrY_authors = "*Rhie, A., *Nurk, S., *Cechova, M., *Hoyt, S. J., *<b>Taylor, D. J.</b>, Altemose, N., Hook, P. W., Koren, S., Rautiainen, M., Alexandrov, I. A., Allen, J., Asri, M., Bzikadze, A. v., Chen, N.-C., Chin, C.-S., Diekhans, M., Flicek, P., Formenti, G., Fungtammasan, A., …, Phillippy, A. M.";
-				var chrY_year = "2022";
-				var chrY_title = "The complete sequence of a human Y chromosome";
-				var chrY_journal = "bioRxiv";
-				var chrY_doi = "10.1101/2022.12.01.518724";
-				
-				var chrY_longRef = getLongRef(chrY_authors, chrY_year, chrY_title, chrY_journal, chrY_doi);
-				var chrY_shortRef = getShortRef(chrY_authors, chrY_year, chrY_journal, chrY_doi);
-				
-				document.getElementById("chrY_longRef").innerHTML = "hldsflogijsdfg";
-				document.getElementById("chrY_shortRef").innerHTML = chrY_shortRef;
-
-			</script> -->
 			<script>
 
 				function replaceAll(id, replacedElem) {
@@ -702,7 +671,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						replaceAll(id + '_longRef', longRef);
 						replaceAll(id + '_shortRef', shortRef);
 
-						document.getElementById("test").innerHTML = 'Test15';
+						document.getElementById("test").innerHTML = 'Test16';
 					}
 				})
 				
@@ -710,7 +679,3 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</body>
 </html>
-
-<!-- <span id="chrY_paper_dimensions" class="__dimensions_badge_embed__" data-doi="10.1101/2022.12.01.518724" data-style="small_circle" style="width:8%;display:inline-block;"></span>
-
-<div id="chrY_paper_altmetric" data-badge-popover="right" data-badge-type="donut" data-doi="10.1101/2022.12.01.518724" class="altmetric-embed" style="display: inline-block;width:8%;vertical-align:middle;padding:0;margin:0;border:0 none !important;text-decoration:none" /> -->
