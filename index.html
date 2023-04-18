@@ -672,14 +672,14 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						let title = data[i].title;
 						let journal = data[i].journal;
 						let doi = data[i].doi;
-
+						console.log(id);
 						let longRef = getLongRef(authors, year, title, journal, doi);
 						let shortRef = getShortRef(authors, year, journal, doi);
 
 						replaceAll(id + '_longRef', longRef);
 						replaceAll(id + '_shortRef', shortRef);
 
-						document.getElementById(data[i].id).innerHTML = 'Test5';
+						document.getElementById(data[i].id).innerHTML = 'Test6';
 					}
 				})
 				
