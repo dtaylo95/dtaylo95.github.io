@@ -667,7 +667,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				function updateDimensions(id, doi) {
 					let dimensionElem = document.getElementById(id);
-					dimensionElem.class = "__dimensions_badge_embed__";
+					dimensionElem['class'] = "__dimensions_badge_embed__";
 					dimensionElem['data-doi'] = doi;
 					dimensionElem['data-style'] = "small_circle";
 				}
@@ -688,7 +688,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						replaceAll(id + '_longRef', longRef);
 						replaceAll(id + '_shortRef', shortRef);
 
-						document.getElementById("test").innerHTML = 'Test9';
+						document.getElementById("test").innerHTML = 'Test10';
 					}
 				})
 				
