@@ -73,13 +73,13 @@
 									</header>
 
 									<h4>Characterizing a complete human reference genome</h4>
-									<a href="https://doi.org/10.1126/science.abl3533" target="_blank" class="image" style="width:70%"><img src="images/T2T-variants-graphical-abstract_v2.png" alt="" style="width:100%"/></a>
+									<a id="variants_paper_link" target="_blank" class="image" style="width:70%"><img src="images/T2T-variants-graphical-abstract_v2.png" alt="" style="width:100%"/></a>
 									<p style="font-size:12px">Comparison of chr1 assembly between GRCh38 and T2T-CHM13. Adapted from <span id="variants_paper_shortRef" /></p>
 									<p>The first human genome sequence—completed in 2003 as part of the Human Genome Project—covered 92% of the full genome. That last 8% (almost 200 million bases)—largely comprised of difficult-to-resolve repetitive sequences—eluded scientists for nearly two decades. However, in 2021 the <a href="https://sites.google.com/ucsc.edu/t2tworkinggroup" target="_blank">Telomere-to-Telomere (T2T) Consortium</a> finally assembled a 100% complete human genome (T2T-CHM13), using long-read technologies to fill in the missing gaps and correct errors in the previous assembly.<br />
 									<br />
-									As a member of this consortium, I helped characterize <a href="https://doi.org/10.1126/science.abl3533" target="_blank">the utility of using this assembly as a reference for analysis of human genetic variation</a>. In addition to characterizing variation in previously-unresolved regions of the genome, I also facilitated the transition from the current widely used human reference genome (GRCh38) to the new T2T-CHM13 assembly by lifting over catalogs of human genetic variation (over 700 million distinct genetic variants)—to the new reference.<br />
+									As a member of this consortium, I helped characterize <a id="variants_paper_link" target="_blank">the utility of using this assembly as a reference for analysis of human genetic variation</a>. In addition to characterizing variation in previously-unresolved regions of the genome, I also facilitated the transition from the current widely used human reference genome (GRCh38) to the new T2T-CHM13 assembly by lifting over catalogs of human genetic variation (over 700 million distinct genetic variants)—to the new reference.<br />
 									<br />
-									Recently, the T2T Consortium finished <a href="https://doi.org/10.1101/2022.12.01.518724" target="_blank">our assembly of a human Y chromosome</a>, completing the T2T-CHM13v2.0 reference genome. This assembly adds 30 million bases of new sequence (over 50% of the chromosome!) and corrects errors in the previous assembly. Building on my work with the T2T-CHM13v1.0 assembly, I led an analysis of short-read alignment and variant calling using this new assembly, characterizing the improvements offered relative to the previous reference.</p>
+									Recently, the T2T Consortium finished <a id="chrY_paper_link" target="_blank">our assembly of a human Y chromosome</a>, completing the T2T-CHM13v2.0 reference genome. This assembly adds 30 million bases of new sequence (over 50% of the chromosome!) and corrects errors in the previous assembly. Building on my work with the T2T-CHM13v1.0 assembly, I led an analysis of short-read alignment and variant calling using this new assembly, characterizing the improvements offered relative to the previous reference.</p>
 									<div>
 										<h5>Relevant publications</h5>
 										<p style="font-size: 70%; margin-bottom:1em">&#42;   denotes co-first authorship</p>
@@ -109,12 +109,12 @@
 									</div>
 
 									<h4 style="padding-top:2em">Exploring human regulatory sequences</h4>
-									<a href="https://doi.org/10.1101/2023.04.02.535219" target="_blank" class="image" style="width:60%"><img src="images/blood_cCREs.png" alt="" style="width:100%"/></a>
+									<a id="cCRE_paper_link" target="_blank" class="image" style="width:60%"><img src="images/blood_cCREs.png" alt="" style="width:100%"/></a>
 									<p style="font-size:12px;width:60%;line-height:20px;">Enrichment of blood-derived cCREs in heritability of blood-related traits. Blood-related traits in red, non-blood-related traits in black. Adapted from <span id="cCRE_paper_shortRef" /></p>
 									<p>The vast majority of huamn trait-associated genetic variation lies in non-coding regions of the genome. Additionally, genetic variation affecting gene expression and alternative splicing has been shown to be a major contributor of human traits and disease. Unfortunately, the molecular mechanisms by which trait-associated non-coding variation drive phenotypic differences between individuals are still not well-characterized.<br />
 									<br />
 									The <a href="https://usevision.org/" target="_blank"
-									>VISION project</a> uses massive epigenomic datasets from hematopoetic cells lines to characterize and validate regulatory sequences in the human and mouse genomes, and to build better models of gene expression and regulation. As part of an effort to <a href="https://doi.org/10.1101/2023.04.02.535219" target="_blank">identify candidate cis-regulatory elements (cCREs) using cross-species epigenomic data</a>, I worked with fellow Ph.D. student <a href="https://kweav.github.io/" target="_blank">Kate Weaver</a> to explore the enrichment of the identified cCREs in heritability of human blood-related traits. Validating their characterization, we find that the identified cCREs are significantly enriched in and <i>highly</i> specific to human blood cell phenotypes.<br />
+									>VISION project</a> uses massive epigenomic datasets from hematopoetic cells lines to characterize and validate regulatory sequences in the human and mouse genomes, and to build better models of gene expression and regulation. As part of an effort to <a id="cCRE_paper_link" target="_blank">identify candidate cis-regulatory elements (cCREs) using cross-species epigenomic data</a>, I worked with fellow Ph.D. student <a href="https://kweav.github.io/" target="_blank">Kate Weaver</a> to explore the enrichment of the identified cCREs in heritability of human blood-related traits. Validating their characterization, we find that the identified cCREs are significantly enriched in and <i>highly</i> specific to human blood cell phenotypes.<br />
 									<br />
 									In my own work, I am discovering and characterizing gene expression- and splicing-associated variation in <i>globally diverse</i> human cohorts. Previous molecular association studies have predominantly been restricted to individuals of European ancestries, with limited representation from other global populations. This diminishes the generalizability of results, raises ethical concerns about the distribution of research benefits, and hinders understanding of the diversity and evolution of gene expression across human populations. By exploring functional genetic variation in diverse cohorts, we hope to expand understanding of gene expression diversity across human populations.</p>
 									<div>
@@ -654,6 +654,14 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					}
 				}
 
+				function updateAllLinks(id, doi) {
+					let elms = document.querySelectorAll(`[id='${id}']`);
+
+					for (let i = 0; i < elms.length; i++) {
+						elms[i].setAttribute('href', `https://doi.org/${doi}`);
+					} 
+				}
+
 				$.getJSON('docs/references.json', function(data) {
 					for (let i=0; i < data.length; i++) {
 						
@@ -668,10 +676,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 						updateDimensions(id + '_dimensions', doi);
 						updateAltmetric(id + '_altmetric', doi);
+						updateAllLinks(od + '_link', doi);
 						replaceAll(id + '_longRef', longRef);
 						replaceAll(id + '_shortRef', shortRef);
 
-						document.getElementById("test").innerHTML = 'Test16';
+						document.getElementById("test").innerHTML = 'Test17';
 					}
 				})
 				
