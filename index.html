@@ -91,7 +91,8 @@
 											</div>
 											<!-- <span id="chrY_paper_dimensions" class="__dimensions_badge_embed__" data-doi="10.1101/2022.12.01.518724" data-style="small_circle" style="width:8%;display:inline-block;"></span> -->
 											<span id="chrY_paper_dimensions" style="width:8%;display:inline-block;"></span>
-											<div id="chrY_paper_altmetric" data-badge-popover="right" data-badge-type="donut" data-doi="10.1101/2022.12.01.518724" class="altmetric-embed" style="display: inline-block;width:8%;vertical-align:middle;padding:0;margin:0;border:0 none !important;text-decoration:none" />
+											<!-- <div id="chrY_paper_altmetric" data-badge-popover="right" data-badge-type="donut" data-doi="10.1101/2022.12.01.518724" class="altmetric-embed" style="display: inline-block;width:8%;vertical-align:middle;padding:0;margin:0;border:0 none !important;text-decoration:none" /> -->
+											<div id="chrY_paper_altmetric" style="display: inline-block;width:8%;vertical-align:middle;padding:0;margin:0" />
 										</article>
 										<article style="border-top:0;padding-top:0;margin-bottom:1em">
 											<div class="inner" style="display: inline-block;width:83%;padding-right:2em">
@@ -666,12 +667,21 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				}
 
 				function updateDimensions(id, doi) {
-					console.log(id);
 					let dimensionElem = document.getElementById(id);
 					if (dimensionElem) {
 						dimensionElem.setAttribute('class', "__dimensions_badge_embed__");
 						dimensionElem.setAttribute('data-doi',  doi);
 						dimensionElem.setAttribute('data-style', "small_circle");
+					}
+				}
+
+				function updateDimensions(id, doi) {
+					let altmetricElem = document.getElementById(id);
+					if (altmetricElem) {
+						altmetricElem.setAttribute('class', "altmetric-embed");
+						altmetricElem.setAttribute('data-doi',  doi);
+						altmetricElem.setAttribute('data-badge-type', "donut");
+						altmetricElem.setAttribute('data-badge-popover', "right");
 					}
 				}
 
@@ -688,10 +698,11 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						let shortRef = getShortRef(authors, year, journal, doi);
 
 						updateDimensions(id + '_dimensions', doi);
+						updateAltmetric(id + '_altmetric', doi);
 						replaceAll(id + '_longRef', longRef);
 						replaceAll(id + '_shortRef', shortRef);
 
-						document.getElementById("test").innerHTML = 'Test13';
+						document.getElementById("test").innerHTML = 'Test14';
 					}
 				})
 				
@@ -701,4 +712,5 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 </html>
 
 <!-- <span id="chrY_paper_dimensions" class="__dimensions_badge_embed__" data-doi="10.1101/2022.12.01.518724" data-style="small_circle" style="width:8%;display:inline-block;"></span>
+
 <div id="chrY_paper_altmetric" data-badge-popover="right" data-badge-type="donut" data-doi="10.1101/2022.12.01.518724" class="altmetric-embed" style="display: inline-block;width:8%;vertical-align:middle;padding:0;margin:0;border:0 none !important;text-decoration:none" /> -->
