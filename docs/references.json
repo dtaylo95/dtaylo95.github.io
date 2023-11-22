@@ -30,5 +30,13 @@
 		"title": "Cross-species regulatory landscapes and elements revealed by novel joint systematic integration of human and mouse blood cell epigenomes",
 		"journal": "bioRxiv",
 		"doi": "10.1101/2023.04.02.535219"
+	},
+	{
+		"id": "MAGE_paper",
+		"authors": "<b>Taylor, D. J.</b>, Chhetri, S. B., Tassia, M. G., Biddanda, A., Battle, A., McCoy, R. C.",
+		"year": "2023",
+		"title": "Sources of gene expression variation in a globally diverse human cohort",
+		"journal": "bioRxiv",
+		"doi": "10.1101/2023.11.04.565639"
 	}
 ]
