@@ -299,7 +299,7 @@
 
 				function updateAltmetric(id, doi) {
 					let altmetricElem = document.getElementById(id);
-					if (altmetricElem) {
+					altmetricElem.onload = function() {
 						altmetricElem.setAttribute('class', "altmetric-embed");
 						altmetricElem.setAttribute('data-doi',  "https://doi.org/" + doi);
 						altmetricElem.setAttribute('data-badge-type', "donut");
@@ -333,13 +333,15 @@
 						updateAllLinks(id + '_link', doi);
 						replaceAll(id + '_longRef', longRef);
 						replaceAll(id + '_shortRef', shortRef);
-
-						document.addEventListener('DOMContentLoaded', function(){
-							$('.altmetric-embed').html('working');
-						});
 					}
 				})
 				
+			</script>
+
+			<script>
+				document.addEventListener('DOMContentLoaded', function(){
+					$('.altmetric-embed').html('working');
+				});
 			</script>
 
 			<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
