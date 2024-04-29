@@ -38,5 +38,13 @@
 		"title": "Sources of gene expression variation in a globally diverse human cohort",
 		"journal": "bioRxiv",
 		"doi": "10.1101/2023.11.04.565639"
+	},
+	{
+		"id": "T2T Review",
+		"authors": "*<b>Taylor, D.J.</b>, *Eizenga, J. M., *Li, Q., Das, A., Jenike, K. M., Kenny, E. E., Miga, K. H., Monlong, J., McCoy, R. C., Paten, B., Schatz, M. C.",
+		"year": "2024",
+		"title": "Beyond the Human Genome Project: The age of complete human genome sequences and pangenome references",
+		"journal": "Annual Reviews",
+		"doi": "10.1146/annurev-genom-021623-081639"
 	}
 ]
