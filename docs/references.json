@@ -26,18 +26,18 @@
 	{
 		"id": "cCRE_paper",
 		"authors": "Xiang, G., He, X., Giardine, B. M., Isaac, K. J., <b>Taylor, D. J.</b>, McCoy, R. C., Jansen, C., Keller, C. A., Wixom, A. Q., Cockburn, A., Miller, A., Qi, Q., He, Y., Li, Y., Lichtenberg, J., Heuston, E. F., Anderson, S. M., Luan, J., Vermunt, M. W., ..., Hardison, R. C.",
-		"year": "2023",
-		"title": "Cross-species regulatory landscapes and elements revealed by novel joint systematic integration of human and mouse blood cell epigenomes",
+		"year": "2024",
+		"title": "Interspecies regulatory landscapes and elements revealed by novel joint systematic integration of human and mouse blood cell epigenomes ",
 		"journal": "bioRxiv",
 		"doi": "10.1101/2023.04.02.535219"
 	},
 	{
 		"id": "MAGE_paper",
-		"authors": "<b>Taylor, D. J.</b>, Chhetri, S. B., Tassia, M. G., Biddanda, A., Battle, A., McCoy, R. C.",
-		"year": "2023",
+		"authors": "<b>Taylor, D. J.</b>, Chhetri, S. B., Tassia, M. G., Biddanda, A., Yan, S. M., Wojcik, G. L., Battle, A., McCoy, R. C.",
+		"year": "2024",
 		"title": "Sources of gene expression variation in a globally diverse human cohort",
-		"journal": "bioRxiv",
-		"doi": "10.1101/2023.11.04.565639"
+		"journal": "Nature",
+		"doi": "10.1038/s41586-024-07708-2"
 	},
 	{
 		"id": "T2T Review",
